@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>IMC</title>
+    <link href="styleImc.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>
+      Cálculo IMC
+    </h1>
+    <main class="principal">
+
+      <div>
+        <label>Digite seu nome - </label>
+        <input id="nome" type="text">
+        <br>
+      </div>
+
+      <div>
+        <label>Digite sua altura (metros) - </label>
+        <input id="altura" type="number">
+        <br>
+      </div>
+
+      <div>
+        <label>Digite seu peso (kg) - </label>
+        <input id="peso" type="number">
+        <br>
+        <input id="botao" type="submit" value="Calcular" class="Botao">
+
+      </div>
+
+    <textarea cols="40" rows="10" id="resultado" class="input-padrao"></textarea>
+    </main>
+    <script src="scriptImc.js"></script>
+
+  </body>
+</html>
