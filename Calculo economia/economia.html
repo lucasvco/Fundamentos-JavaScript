@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Economia</title>
+    <link href="econStyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <h1>Quanto economizar?</h1>
+      <main class="principal">
+        <div>
+            <label>Escolha o mês:</label>
+            <select id="mes">
+                <option>Janeiro</option>
+                <option>Fevereiro</option>
+                <option>Março</option>
+                <option>Abril</option>
+                <option>Maio</option>
+                <option>Junho</option>
+                <option>Julho</option>
+                <option>Agosto</option>
+                <option>Setembro</option>
+                <option>Outubo</option>
+                <option>Novembro</option>
+                <option>Dezembo</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Quanto recebeu (R$): </label>
+            <input id="recebeu" type="number">
+            <br>
+          </div>
+    
+          <div>
+            <label>Quanto gastou (R$): </label>
+            <input id="gastou" type="number">
+            <br>
+          </div>
+
+          <div>
+            <label>Quanto você quer economizar do que sobrou? (%): </label>
+            <input id="econPorcent" type="number">
+            <br>
+            <input id="botao" type="submit" value="Calcular" class="Botao">
+          </div>
+        
+          <textarea cols="40" rows="10" id="resultado" class="input-padrao"></textarea>
+
+      </main>
+      <script src="scriptEcon.js"></script>
+  </body>
