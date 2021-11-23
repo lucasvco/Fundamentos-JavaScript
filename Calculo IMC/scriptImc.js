@@ -10,11 +10,11 @@ function imc(){
     const calcImc = (peso/(altura*altura)).toFixed(1);
 
     if(calcImc >= 18.5 && calcImc <= 24.9){
-        resultado.textContent = nome + " " + "o seu IMC é " + calcImc + ". Você esta com o peso normal.";
+        resultado.textContent = `${nome} o seu IMC é ${calcImc}. Você esta com o peso normal.`;
     }else if(calcImc<18.5){
-        resultado.textContent = nome + " " + "o seu IMC é " + calcImc + ". Você esta abaixo do peso recomendado.";
+        resultado.textContent = `${nome} o seu IMC é ${calcImc}. Você esta abaixo do peso recomendado.`;
     }else if(calcImc>24.9){
-        resultado.textContent = nome + " " + "o seu IMC é " + calcImc + ". Você esta acima do peso recomendado.";
+        resultado.textContent = `${nome} o seu IMC é ${calcImc}. Você esta acima do peso recomendado.`;
     }    
 }
 botao.addEventListener("click", imc);
