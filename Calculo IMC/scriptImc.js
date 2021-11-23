@@ -1,13 +1,13 @@
 
-var botao = document.getElementById("botao");
+const botao = document.getElementById("botao");
 
 
 function imc(){
-    var nome = document.getElementById("nome").value;
-    var altura = document.getElementById("altura").value;
-    var peso = document.getElementById("peso").value;
-    var resultado = document.getElementById("resultado");
-    var calcImc = (peso/(altura*altura)).toFixed(1);
+    const nome = document.getElementById("nome").value;
+    const altura = document.getElementById("altura").value;
+    const peso = document.getElementById("peso").value;
+    const resultado = document.getElementById("resultado");
+    const calcImc = (peso/(altura*altura)).toFixed(1);
 
     if(calcImc >= 18.5 && calcImc <= 24.9){
         resultado.textContent = nome + " " + "o seu IMC é " + calcImc + ". Você esta com o peso normal.";
